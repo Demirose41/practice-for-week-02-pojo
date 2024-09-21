@@ -12,7 +12,9 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 ***********************************************************************/
 
 function arrayConverter(array) {
-  // Your code here
+  let newObj = {};
+  array.forEach((ele) => newObj[ele] === undefined ? newObj[ele] = 1 : newObj[ele]++ )
+  return newObj;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
