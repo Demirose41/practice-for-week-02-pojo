@@ -20,7 +20,9 @@ keyInObjectArray(objArray, 'animal'); // => false
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  // Your code here
+  let keys = [];
+  objArray.forEach((obj) => keys.push(...Object.keys(obj)));
+  return keys.includes(keyString);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
